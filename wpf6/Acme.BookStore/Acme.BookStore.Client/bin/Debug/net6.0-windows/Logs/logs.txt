@@ -1,0 +1,363 @@
+2022-04-22 09:52:47.129 +08:00 [INF] Starting WPF host.
+2022-04-22 09:52:47.639 +08:00 [FTL] Host terminated unexpectedly!
+System.IO.FileNotFoundException: Could not load file or assembly 'Volo.Abp.Localization.Abstractions, Version=5.2.1.0, Culture=neutral, PublicKeyToken=null'. 系统找不到指定的文件。
+File name: 'Volo.Abp.Localization.Abstractions, Version=5.2.1.0, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.CustomAttribute._CreateCaObject(RuntimeModule pModule, RuntimeType type, IRuntimeMethodInfo pCtor, Byte** ppBlob, Byte* pEndBlob, Int32* pcNamedArgs)
+   at System.Reflection.CustomAttribute.CreateCaObject(RuntimeModule module, RuntimeType type, IRuntimeMethodInfo ctor, IntPtr& blob, IntPtr blobEnd, Int32& namedArgs)
+   at System.Reflection.CustomAttribute.AddCustomAttributes(ListBuilder`1& attributes, RuntimeModule decoratedModule, Int32 decoratedMetadataToken, RuntimeType attributeFilterType, Boolean mustBeInheritable, ListBuilder`1 derivedAttributes)
+   at System.Reflection.CustomAttribute.GetCustomAttributes(RuntimeType type, RuntimeType caType, Boolean inherit)
+   at System.RuntimeType.GetCustomAttributes(Type attributeType, Boolean inherit)
+   at System.Attribute.GetCustomAttributes(MemberInfo element, Boolean inherit)
+   at Volo.Abp.Modularity.AbpModuleHelper.FindDependedModuleTypes(Type moduleType)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.AddModuleAndDependenciesRecursively(List`1 moduleTypes, Type moduleType, ILogger logger, Int32 depth)
+   at Volo.Abp.Modularity.AbpModuleHelper.FindAllModuleTypes(Type startupModuleType, ILogger logger)
+   at Volo.Abp.Modularity.ModuleLoader.FillModules(List`1 modules, IServiceCollection services, Type startupModuleType, PlugInSourceList plugInSources)
+   at Volo.Abp.Modularity.ModuleLoader.GetDescriptors(IServiceCollection services, Type startupModuleType, PlugInSourceList plugInSources)
+   at Volo.Abp.Modularity.ModuleLoader.LoadModules(IServiceCollection services, Type startupModuleType, PlugInSourceList plugInSources)
+   at Volo.Abp.AbpApplicationBase.LoadModules(IServiceCollection services, AbpApplicationCreationOptions options)
+   at Volo.Abp.AbpApplicationBase..ctor(Type startupModuleType, IServiceCollection services, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationWithInternalServiceProvider..ctor(Type startupModuleType, IServiceCollection services, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationWithInternalServiceProvider..ctor(Type startupModuleType, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationFactory.Create(Type startupModuleType, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationFactory.CreateAsync[TStartupModule](Action`1 optionsAction)
+   at Acme.BookStore.Client.App.OnStartup(StartupEventArgs e) in F:\netdev\Test\AbpDemo\Acme.BookStore\wpf6\Acme.BookStore\Acme.BookStore.Client\App.xaml.cs:line 35
+2022-04-22 10:19:15.593 +08:00 [INF] Starting WPF host.
+2022-04-22 10:19:18.125 +08:00 [INF] Loaded ABP modules:
+2022-04-22 10:19:18.128 +08:00 [INF] - Acme.BookStore.Client.BookStoreClientModule
+2022-04-22 10:19:18.128 +08:00 [INF]   - Acme.BookStore.Proxy.BookStoreProxyModule
+2022-04-22 10:19:18.128 +08:00 [INF]     - Volo.Abp.Http.Client.AbpHttpClientModule
+2022-04-22 10:19:18.128 +08:00 [INF]       - Volo.Abp.Http.AbpHttpModule
+2022-04-22 10:19:18.128 +08:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-04-22 10:19:18.128 +08:00 [INF]         - Volo.Abp.Json.AbpJsonModule
+2022-04-22 10:19:18.128 +08:00 [INF]           - Volo.Abp.Timing.AbpTimingModule
+2022-04-22 10:19:18.128 +08:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2022-04-22 10:19:18.128 +08:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-04-22 10:19:18.128 +08:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2022-04-22 10:19:18.128 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-04-22 10:19:18.128 +08:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2022-04-22 10:19:18.128 +08:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-04-22 10:19:18.128 +08:00 [INF]                   - Volo.Abp.Data.AbpDataModule
+2022-04-22 10:19:18.128 +08:00 [INF]                     - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-04-22 10:19:18.128 +08:00 [INF]                       - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-04-22 10:19:18.128 +08:00 [INF]                     - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-04-22 10:19:18.128 +08:00 [INF]                     - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-04-22 10:19:18.128 +08:00 [INF]         - Volo.Abp.Minify.AbpMinifyModule
+2022-04-22 10:19:18.128 +08:00 [INF]       - Volo.Abp.Castle.AbpCastleCoreModule
+2022-04-22 10:19:18.128 +08:00 [INF]       - Volo.Abp.Threading.AbpThreadingModule
+2022-04-22 10:19:18.128 +08:00 [INF]       - Volo.Abp.Validation.AbpValidationModule
+2022-04-22 10:19:18.128 +08:00 [INF]       - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-04-22 10:19:18.128 +08:00 [INF]     - Acme.BookStore.BookStoreApplicationContractsModule
+2022-04-22 10:19:18.128 +08:00 [INF]       - Acme.BookStore.BookStoreDomainSharedModule
+2022-04-22 10:19:18.128 +08:00 [INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2022-04-22 10:19:18.128 +08:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2022-04-22 10:19:18.128 +08:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2022-04-22 10:19:18.128 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-04-22 10:19:18.128 +08:00 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-04-22 10:19:18.128 +08:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2022-04-22 10:19:18.128 +08:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-04-22 10:19:18.128 +08:00 [INF]         - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2022-04-22 10:19:18.128 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-04-22 10:19:18.128 +08:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-04-22 10:19:18.128 +08:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-04-22 10:19:18.128 +08:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2022-04-22 10:19:18.128 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-04-22 10:19:18.128 +08:00 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-04-22 10:19:18.128 +08:00 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2022-04-22 10:19:18.128 +08:00 [INF]               - Volo.Abp.Guids.AbpGuidsModule
+2022-04-22 10:19:18.128 +08:00 [INF]               - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-04-22 10:19:18.128 +08:00 [INF]               - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-04-22 10:19:18.128 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-04-22 10:19:18.128 +08:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-04-22 10:19:18.128 +08:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-04-22 10:19:18.128 +08:00 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-04-22 10:19:18.128 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2022-04-22 10:19:18.128 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2022-04-22 10:19:18.128 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-04-22 10:19:18.157 +08:00 [INF] Initialized all ABP modules.
+2022-04-22 10:19:19.151 +08:00 [INF] Call SayHello
+2022-04-22 10:19:19.151 +08:00 [INF] Call SayHello
+2022-04-22 10:19:52.004 +08:00 [INF] Starting WPF host.
+2022-04-22 10:19:53.602 +08:00 [INF] Loaded ABP modules:
+2022-04-22 10:19:53.605 +08:00 [INF] - Acme.BookStore.Client.BookStoreClientModule
+2022-04-22 10:19:53.605 +08:00 [INF]   - Acme.BookStore.Proxy.BookStoreProxyModule
+2022-04-22 10:19:53.605 +08:00 [INF]     - Volo.Abp.Http.Client.AbpHttpClientModule
+2022-04-22 10:19:53.605 +08:00 [INF]       - Volo.Abp.Http.AbpHttpModule
+2022-04-22 10:19:53.605 +08:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-04-22 10:19:53.605 +08:00 [INF]         - Volo.Abp.Json.AbpJsonModule
+2022-04-22 10:19:53.605 +08:00 [INF]           - Volo.Abp.Timing.AbpTimingModule
+2022-04-22 10:19:53.605 +08:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2022-04-22 10:19:53.605 +08:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-04-22 10:19:53.605 +08:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2022-04-22 10:19:53.605 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-04-22 10:19:53.605 +08:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2022-04-22 10:19:53.605 +08:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-04-22 10:19:53.605 +08:00 [INF]                   - Volo.Abp.Data.AbpDataModule
+2022-04-22 10:19:53.605 +08:00 [INF]                     - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-04-22 10:19:53.605 +08:00 [INF]                       - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-04-22 10:19:53.605 +08:00 [INF]                     - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-04-22 10:19:53.605 +08:00 [INF]                     - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-04-22 10:19:53.606 +08:00 [INF]         - Volo.Abp.Minify.AbpMinifyModule
+2022-04-22 10:19:53.606 +08:00 [INF]       - Volo.Abp.Castle.AbpCastleCoreModule
+2022-04-22 10:19:53.606 +08:00 [INF]       - Volo.Abp.Threading.AbpThreadingModule
+2022-04-22 10:19:53.606 +08:00 [INF]       - Volo.Abp.Validation.AbpValidationModule
+2022-04-22 10:19:53.606 +08:00 [INF]       - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-04-22 10:19:53.606 +08:00 [INF]     - Acme.BookStore.BookStoreApplicationContractsModule
+2022-04-22 10:19:53.606 +08:00 [INF]       - Acme.BookStore.BookStoreDomainSharedModule
+2022-04-22 10:19:53.606 +08:00 [INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2022-04-22 10:19:53.606 +08:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2022-04-22 10:19:53.606 +08:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2022-04-22 10:19:53.606 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-04-22 10:19:53.606 +08:00 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-04-22 10:19:53.606 +08:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2022-04-22 10:19:53.606 +08:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-04-22 10:19:53.606 +08:00 [INF]         - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2022-04-22 10:19:53.606 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-04-22 10:19:53.606 +08:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-04-22 10:19:53.606 +08:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-04-22 10:19:53.606 +08:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2022-04-22 10:19:53.606 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-04-22 10:19:53.606 +08:00 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-04-22 10:19:53.606 +08:00 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2022-04-22 10:19:53.606 +08:00 [INF]               - Volo.Abp.Guids.AbpGuidsModule
+2022-04-22 10:19:53.606 +08:00 [INF]               - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-04-22 10:19:53.606 +08:00 [INF]               - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-04-22 10:19:53.606 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-04-22 10:19:53.606 +08:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-04-22 10:19:53.606 +08:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-04-22 10:19:53.606 +08:00 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-04-22 10:19:53.606 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2022-04-22 10:19:53.606 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2022-04-22 10:19:53.606 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-04-22 10:19:53.668 +08:00 [INF] Initialized all ABP modules.
+2022-04-22 10:19:54.598 +08:00 [INF] Call SayHello
+2022-04-22 10:19:54.598 +08:00 [INF] Call SayHello
+2022-04-22 10:20:34.449 +08:00 [INF] Starting WPF host.
+2022-04-22 10:20:36.000 +08:00 [INF] Loaded ABP modules:
+2022-04-22 10:20:36.002 +08:00 [INF] - Acme.BookStore.Client.BookStoreClientModule
+2022-04-22 10:20:36.002 +08:00 [INF]   - Acme.BookStore.Proxy.BookStoreProxyModule
+2022-04-22 10:20:36.002 +08:00 [INF]     - Volo.Abp.Http.Client.AbpHttpClientModule
+2022-04-22 10:20:36.002 +08:00 [INF]       - Volo.Abp.Http.AbpHttpModule
+2022-04-22 10:20:36.002 +08:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-04-22 10:20:36.002 +08:00 [INF]         - Volo.Abp.Json.AbpJsonModule
+2022-04-22 10:20:36.002 +08:00 [INF]           - Volo.Abp.Timing.AbpTimingModule
+2022-04-22 10:20:36.003 +08:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2022-04-22 10:20:36.003 +08:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-04-22 10:20:36.003 +08:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2022-04-22 10:20:36.003 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-04-22 10:20:36.003 +08:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2022-04-22 10:20:36.003 +08:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-04-22 10:20:36.003 +08:00 [INF]                   - Volo.Abp.Data.AbpDataModule
+2022-04-22 10:20:36.003 +08:00 [INF]                     - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-04-22 10:20:36.003 +08:00 [INF]                       - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-04-22 10:20:36.003 +08:00 [INF]                     - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-04-22 10:20:36.003 +08:00 [INF]                     - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-04-22 10:20:36.003 +08:00 [INF]         - Volo.Abp.Minify.AbpMinifyModule
+2022-04-22 10:20:36.003 +08:00 [INF]       - Volo.Abp.Castle.AbpCastleCoreModule
+2022-04-22 10:20:36.003 +08:00 [INF]       - Volo.Abp.Threading.AbpThreadingModule
+2022-04-22 10:20:36.003 +08:00 [INF]       - Volo.Abp.Validation.AbpValidationModule
+2022-04-22 10:20:36.003 +08:00 [INF]       - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-04-22 10:20:36.003 +08:00 [INF]     - Acme.BookStore.BookStoreApplicationContractsModule
+2022-04-22 10:20:36.003 +08:00 [INF]       - Acme.BookStore.BookStoreDomainSharedModule
+2022-04-22 10:20:36.003 +08:00 [INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2022-04-22 10:20:36.003 +08:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2022-04-22 10:20:36.003 +08:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2022-04-22 10:20:36.003 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-04-22 10:20:36.003 +08:00 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-04-22 10:20:36.003 +08:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2022-04-22 10:20:36.003 +08:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-04-22 10:20:36.003 +08:00 [INF]         - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2022-04-22 10:20:36.003 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-04-22 10:20:36.003 +08:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-04-22 10:20:36.003 +08:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-04-22 10:20:36.003 +08:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2022-04-22 10:20:36.003 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-04-22 10:20:36.003 +08:00 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-04-22 10:20:36.003 +08:00 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2022-04-22 10:20:36.003 +08:00 [INF]               - Volo.Abp.Guids.AbpGuidsModule
+2022-04-22 10:20:36.003 +08:00 [INF]               - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-04-22 10:20:36.003 +08:00 [INF]               - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-04-22 10:20:36.003 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-04-22 10:20:36.003 +08:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-04-22 10:20:36.003 +08:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-04-22 10:20:36.003 +08:00 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-04-22 10:20:36.003 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2022-04-22 10:20:36.003 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2022-04-22 10:20:36.003 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-04-22 10:20:36.071 +08:00 [INF] Initialized all ABP modules.
+2022-04-22 10:20:36.990 +08:00 [INF] Call SayHello
+2022-04-22 10:20:36.991 +08:00 [INF] Call SayHello
+2022-04-22 10:28:50.286 +08:00 [INF] Starting WPF host.
+2022-04-22 10:28:50.701 +08:00 [INF] Loaded ABP modules:
+2022-04-22 10:28:50.702 +08:00 [INF] - Acme.BookStore.Client.BookStoreClientModule
+2022-04-22 10:28:50.702 +08:00 [INF]   - Acme.BookStore.Proxy.BookStoreProxyModule
+2022-04-22 10:28:50.702 +08:00 [INF]     - Volo.Abp.Http.Client.AbpHttpClientModule
+2022-04-22 10:28:50.702 +08:00 [INF]       - Volo.Abp.Http.AbpHttpModule
+2022-04-22 10:28:50.702 +08:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-04-22 10:28:50.702 +08:00 [INF]         - Volo.Abp.Json.AbpJsonModule
+2022-04-22 10:28:50.702 +08:00 [INF]           - Volo.Abp.Timing.AbpTimingModule
+2022-04-22 10:28:50.702 +08:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2022-04-22 10:28:50.702 +08:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-04-22 10:28:50.702 +08:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2022-04-22 10:28:50.702 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-04-22 10:28:50.702 +08:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2022-04-22 10:28:50.702 +08:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-04-22 10:28:50.702 +08:00 [INF]                   - Volo.Abp.Data.AbpDataModule
+2022-04-22 10:28:50.702 +08:00 [INF]                     - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-04-22 10:28:50.702 +08:00 [INF]                       - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-04-22 10:28:50.702 +08:00 [INF]                     - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-04-22 10:28:50.702 +08:00 [INF]                     - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-04-22 10:28:50.702 +08:00 [INF]         - Volo.Abp.Minify.AbpMinifyModule
+2022-04-22 10:28:50.702 +08:00 [INF]       - Volo.Abp.Castle.AbpCastleCoreModule
+2022-04-22 10:28:50.702 +08:00 [INF]       - Volo.Abp.Threading.AbpThreadingModule
+2022-04-22 10:28:50.702 +08:00 [INF]       - Volo.Abp.Validation.AbpValidationModule
+2022-04-22 10:28:50.702 +08:00 [INF]       - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-04-22 10:28:50.702 +08:00 [INF]     - Acme.BookStore.BookStoreApplicationContractsModule
+2022-04-22 10:28:50.702 +08:00 [INF]       - Acme.BookStore.BookStoreDomainSharedModule
+2022-04-22 10:28:50.702 +08:00 [INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2022-04-22 10:28:50.702 +08:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2022-04-22 10:28:50.702 +08:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2022-04-22 10:28:50.702 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-04-22 10:28:50.702 +08:00 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-04-22 10:28:50.702 +08:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2022-04-22 10:28:50.702 +08:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-04-22 10:28:50.702 +08:00 [INF]         - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2022-04-22 10:28:50.702 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-04-22 10:28:50.702 +08:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-04-22 10:28:50.702 +08:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-04-22 10:28:50.702 +08:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2022-04-22 10:28:50.702 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-04-22 10:28:50.702 +08:00 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-04-22 10:28:50.702 +08:00 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2022-04-22 10:28:50.702 +08:00 [INF]               - Volo.Abp.Guids.AbpGuidsModule
+2022-04-22 10:28:50.702 +08:00 [INF]               - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-04-22 10:28:50.702 +08:00 [INF]               - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-04-22 10:28:50.702 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-04-22 10:28:50.702 +08:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-04-22 10:28:50.702 +08:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-04-22 10:28:50.702 +08:00 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-04-22 10:28:50.702 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2022-04-22 10:28:50.702 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2022-04-22 10:28:50.702 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-04-22 10:28:50.727 +08:00 [INF] Initialized all ABP modules.
+2022-04-22 10:28:51.222 +08:00 [INF] Call SayHello
+2022-04-22 10:28:51.223 +08:00 [INF] Call SayHello
+2022-04-22 10:29:08.434 +08:00 [INF] Starting WPF host.
+2022-04-22 10:29:09.978 +08:00 [INF] Loaded ABP modules:
+2022-04-22 10:29:09.980 +08:00 [INF] - Acme.BookStore.Client.BookStoreClientModule
+2022-04-22 10:29:09.981 +08:00 [INF]   - Acme.BookStore.Proxy.BookStoreProxyModule
+2022-04-22 10:29:09.981 +08:00 [INF]     - Volo.Abp.Http.Client.AbpHttpClientModule
+2022-04-22 10:29:09.981 +08:00 [INF]       - Volo.Abp.Http.AbpHttpModule
+2022-04-22 10:29:09.981 +08:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-04-22 10:29:09.981 +08:00 [INF]         - Volo.Abp.Json.AbpJsonModule
+2022-04-22 10:29:09.981 +08:00 [INF]           - Volo.Abp.Timing.AbpTimingModule
+2022-04-22 10:29:09.981 +08:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2022-04-22 10:29:09.981 +08:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-04-22 10:29:09.981 +08:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2022-04-22 10:29:09.981 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-04-22 10:29:09.981 +08:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2022-04-22 10:29:09.981 +08:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-04-22 10:29:09.981 +08:00 [INF]                   - Volo.Abp.Data.AbpDataModule
+2022-04-22 10:29:09.981 +08:00 [INF]                     - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-04-22 10:29:09.981 +08:00 [INF]                       - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-04-22 10:29:09.981 +08:00 [INF]                     - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-04-22 10:29:09.981 +08:00 [INF]                     - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-04-22 10:29:09.981 +08:00 [INF]         - Volo.Abp.Minify.AbpMinifyModule
+2022-04-22 10:29:09.981 +08:00 [INF]       - Volo.Abp.Castle.AbpCastleCoreModule
+2022-04-22 10:29:09.981 +08:00 [INF]       - Volo.Abp.Threading.AbpThreadingModule
+2022-04-22 10:29:09.981 +08:00 [INF]       - Volo.Abp.Validation.AbpValidationModule
+2022-04-22 10:29:09.981 +08:00 [INF]       - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-04-22 10:29:09.981 +08:00 [INF]     - Acme.BookStore.BookStoreApplicationContractsModule
+2022-04-22 10:29:09.981 +08:00 [INF]       - Acme.BookStore.BookStoreDomainSharedModule
+2022-04-22 10:29:09.981 +08:00 [INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2022-04-22 10:29:09.981 +08:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2022-04-22 10:29:09.981 +08:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2022-04-22 10:29:09.981 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-04-22 10:29:09.981 +08:00 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-04-22 10:29:09.981 +08:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2022-04-22 10:29:09.981 +08:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-04-22 10:29:09.981 +08:00 [INF]         - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2022-04-22 10:29:09.981 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-04-22 10:29:09.981 +08:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-04-22 10:29:09.981 +08:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-04-22 10:29:09.981 +08:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2022-04-22 10:29:09.981 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-04-22 10:29:09.981 +08:00 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-04-22 10:29:09.981 +08:00 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2022-04-22 10:29:09.981 +08:00 [INF]               - Volo.Abp.Guids.AbpGuidsModule
+2022-04-22 10:29:09.981 +08:00 [INF]               - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-04-22 10:29:09.981 +08:00 [INF]               - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-04-22 10:29:09.981 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-04-22 10:29:09.981 +08:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-04-22 10:29:09.981 +08:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-04-22 10:29:09.981 +08:00 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-04-22 10:29:09.981 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2022-04-22 10:29:09.981 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2022-04-22 10:29:09.981 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-04-22 10:29:10.029 +08:00 [INF] Initialized all ABP modules.
+2022-04-22 10:29:11.002 +08:00 [INF] Call SayHello
+2022-04-22 10:29:11.003 +08:00 [INF] Call SayHello
+2022-04-22 10:52:01.257 +08:00 [INF] Starting WPF host.
+2022-04-22 10:52:02.592 +08:00 [INF] Loaded ABP modules:
+2022-04-22 10:52:02.594 +08:00 [INF] - Acme.BookStore.Client.BookStoreClientModule
+2022-04-22 10:52:02.594 +08:00 [INF]   - Acme.BookStore.Proxy.BookStoreProxyModule
+2022-04-22 10:52:02.594 +08:00 [INF]     - Volo.Abp.Http.Client.AbpHttpClientModule
+2022-04-22 10:52:02.594 +08:00 [INF]       - Volo.Abp.Http.AbpHttpModule
+2022-04-22 10:52:02.594 +08:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2022-04-22 10:52:02.594 +08:00 [INF]         - Volo.Abp.Json.AbpJsonModule
+2022-04-22 10:52:02.594 +08:00 [INF]           - Volo.Abp.Timing.AbpTimingModule
+2022-04-22 10:52:02.594 +08:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2022-04-22 10:52:02.594 +08:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2022-04-22 10:52:02.594 +08:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2022-04-22 10:52:02.594 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2022-04-22 10:52:02.594 +08:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2022-04-22 10:52:02.594 +08:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2022-04-22 10:52:02.594 +08:00 [INF]                   - Volo.Abp.Data.AbpDataModule
+2022-04-22 10:52:02.594 +08:00 [INF]                     - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2022-04-22 10:52:02.594 +08:00 [INF]                       - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2022-04-22 10:52:02.594 +08:00 [INF]                     - Volo.Abp.Uow.AbpUnitOfWorkModule
+2022-04-22 10:52:02.594 +08:00 [INF]                     - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2022-04-22 10:52:02.594 +08:00 [INF]         - Volo.Abp.Minify.AbpMinifyModule
+2022-04-22 10:52:02.594 +08:00 [INF]       - Volo.Abp.Castle.AbpCastleCoreModule
+2022-04-22 10:52:02.594 +08:00 [INF]       - Volo.Abp.Threading.AbpThreadingModule
+2022-04-22 10:52:02.594 +08:00 [INF]       - Volo.Abp.Validation.AbpValidationModule
+2022-04-22 10:52:02.594 +08:00 [INF]       - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2022-04-22 10:52:02.594 +08:00 [INF]     - Acme.BookStore.BookStoreApplicationContractsModule
+2022-04-22 10:52:02.594 +08:00 [INF]       - Acme.BookStore.BookStoreDomainSharedModule
+2022-04-22 10:52:02.594 +08:00 [INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2022-04-22 10:52:02.594 +08:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2022-04-22 10:52:02.594 +08:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2022-04-22 10:52:02.594 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2022-04-22 10:52:02.594 +08:00 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2022-04-22 10:52:02.594 +08:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2022-04-22 10:52:02.594 +08:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2022-04-22 10:52:02.594 +08:00 [INF]         - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2022-04-22 10:52:02.594 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2022-04-22 10:52:02.594 +08:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2022-04-22 10:52:02.594 +08:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2022-04-22 10:52:02.594 +08:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2022-04-22 10:52:02.594 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2022-04-22 10:52:02.594 +08:00 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2022-04-22 10:52:02.594 +08:00 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2022-04-22 10:52:02.594 +08:00 [INF]               - Volo.Abp.Guids.AbpGuidsModule
+2022-04-22 10:52:02.594 +08:00 [INF]               - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2022-04-22 10:52:02.594 +08:00 [INF]               - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2022-04-22 10:52:02.594 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2022-04-22 10:52:02.594 +08:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2022-04-22 10:52:02.594 +08:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2022-04-22 10:52:02.594 +08:00 [INF]               - Volo.Abp.Auditing.AbpAuditingContractsModule
+2022-04-22 10:52:02.594 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2022-04-22 10:52:02.594 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2022-04-22 10:52:02.594 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2022-04-22 10:52:02.625 +08:00 [INF] Initialized all ABP modules.
+2022-04-22 10:52:03.387 +08:00 [INF] Call SayHello
+2022-04-22 10:52:03.387 +08:00 [INF] Call SayHello
